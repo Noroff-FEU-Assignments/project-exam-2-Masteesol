@@ -1,0 +1,40 @@
+.fullscreen {
+    height: 100vh;
+    width: 100%;
+    overflow-y: auto;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+}
+
+#fullscreen-1 {
+    -ms-overflow-style: auto; 
+    scrollbar-width: auto;
+}
+
+.carousel.container {
+    width: 100%;
+    margin: 0;
+    max-width: none!important;
+    padding:0!important;
+    position: absolute;
+    z-index: 1000;
+    &.hidden {
+        .carousel-control-next, .carousel-control-prev, .carousel-caption, .carousel-indicators {
+            display: none;
+        }
+    }
+}
+
+.carousel-control-next {
+    justify-content: end;
+    max-width: 8rem;
+}
+
+.carousel-control-prev {
+    justify-content:start;
+    max-width: 8rem;
+}
+
+.carousel-caption h4 {
+    font-weight: 600;
+}
